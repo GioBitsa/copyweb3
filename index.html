@@ -70,9 +70,9 @@
     <div class="mask fix fill x y pen f aic jcc z10 | js-mask js-pe">
         <!-- <div class="abs fill bg-white | js-mask-bg"></div> -->
         <div class="mask__circle rel | js-mask-circle">
-            <!-- <svg class="abs top left x y" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102.5 102.5">
+            <svg class="abs top left x y" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102.5 102.5">
                 <circle class="mask__outline | js-mask-outline" cx="51.25" cy="51.25" r="49" fill="none" stroke="#a08fb7" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5" />
-            </svg> -->
+            </svg>
             <div class="mask__clock abs top left x y | js-mask-clock"></div>
         </div>
     </div>
@@ -80,6 +80,7 @@
     <main class="main z8" role="main" itemscope itemprop="mainContentOfPage" data-router-wrapper data-smooth>
         <article data-router-view="home" id="home" class="js-gl">
 
+            <!-- header -->
             <header class="sh fix top left x pen pt15 s:pt25 z10">
                 <div class="f jcb">
                     <!-- desktop logo -->
@@ -198,6 +199,7 @@
                     </div>
                 </div>
             </header>
+
             <!-- nav bar script -->
             <script>
                 function mobileMenu(x) {
@@ -206,7 +208,7 @@
                 }
             </script>
 
-
+            <!-- hero -->
             <div class="hero pen | js-hero">
                 <div class="hero__inner f aic nowrap rel z3 | js-hero-inner">
 
@@ -252,7 +254,9 @@
 
                     <div class="hero__content abs fill x y f aic jcc | js-hero-content">
                         <div class="rel">
-                            <figure class="hero__logo s:col4 abs | js-h-logo"><img src="./static/logo-full.svg" alt="Everpost"></figure>
+                            <figure class="hero__logo s:col4 abs | js-h-logo">
+                                <img src="./static/logo-full.svg" alt="Everpost">
+                            </figure>
                             <h1 class="hero__title rel black tc">
                                 <div class="f fc aic jcc | js-h-txt">
                                     <div class="oh">
@@ -284,33 +288,42 @@
                                 </div>
                                 <div class="abs top left x y tc f fc aic jcc | js-h-txt js-h-txt--last">
                                     <div class="oh rel">
-                                        <div class="js-h-txt__l">Twice as quickly</div> <span class="uline oh abs bottom uline--h3 | js-h-uline" data-scroll="uline"><span class="uline__inner db abs fill"></span></span>
+                                        <div class="js-h-txt__l">Twice as quickly</div>
+                                        <span class="uline oh abs bottom uline--h3 | js-h-uline" data-scroll="uline">
+                                            <span class="uline__inner db abs fill"></span>
+                                        </span>
                                     </div>
                                     <div class="oh rel">
-                                        <div class="js-h-txt__l">for half the cost.</div> <span class="uline oh abs bottom uline--h4 | js-h-uline" data-scroll="uline"><span class="uline__inner db abs fill"></span></span>
+                                        <div class="js-h-txt__l">for half the cost.</div>
+                                        <span class="uline oh abs bottom uline--h4 | js-h-uline" data-scroll="uline">
+                                            <span class="uline__inner db abs fill"></span>
+                                        </span>
                                     </div>
                                 </div>
                             </h1>
                             <div class="hero-progress abs pea wct | js-h-progress js-h-play-icon" data-anchor="#purpose">
                                 <svg class="abs top left x y hero__circle | js-h-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102.5 102.5">
-            <circle cx="51.25" cy="51.25" r="49" fill="none" stroke="#a08fb7" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
-            <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="-3595.28" y1="20.191" x2="-3594.056" y2="21.183" gradientTransform="matrix(98 0 0 98 352329.75 -1975.25)"><stop offset="0" stop-color="#6042ff"/><stop offset="1" stop-color="#b601ff"/></linearGradient>
-            <path d="M51.2 2.2c27.1 0 49 21.9 49 49s-21.9 49-49 49-49-21.9-49-49 22-49 49-49" fill="none" stroke="url(#a)" stroke-width="3.9" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+                                    <circle cx="51.25" cy="51.25" r="49" fill="none" stroke="#a08fb7" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+                                    <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="-3595.28" y1="20.191" x2="-3594.056" y2="21.183" gradientTransform="matrix(98 0 0 98 352329.75 -1975.25)">
+                                        <stop offset="0" stop-color="#6042ff"/>
+                                        <stop offset="1" stop-color="#b601ff"/>
+                                    </linearGradient>
+                                    <path d="M51.2 2.2c27.1 0 49 21.9 49 49s-21.9 49-49 49-49-21.9-49-49 22-49 49-49" fill="none" stroke="url(#a)" stroke-width="3.9" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
 
+            <!-- intro -->
             <section class="intro rel pen | js-intro">
                 <div class="abs fill z1" data-smooth-item>
                     <img data-lazy-load="/static/bg-gradient.png" class="intro__bg abs top left x y wct | js-intro__bg" alt="">
                     <div class="curve abs left right">
                         <svg xmlns="http://www.w3.org/2000/svg" width="1646" height="53" viewBox="0 0 1646 53" class="x y">
-        <path fill="#F2F1F8" fill-rule="evenodd" d="M0,1.77885024 C327.043564,31.2596167 603.547885,46 829.512962,46 C1055.47804,46 1327.64038,31.2596167 1646,1.77885024 L1646,1.77885024 L1646,54 L0,54 Z" transform="translate(0 -1)"/>
-      </svg>
+                            <path fill="#F2F1F8" fill-rule="evenodd" d="M0,1.77885024 C327.043564,31.2596167 603.547885,46 829.512962,46 C1055.47804,46 1327.64038,31.2596167 1646,1.77885024 L1646,1.77885024 L1646,54 L0,54 Z" transform="translate(0 -1)"/>
+                        </svg>
                     </div>
                 </div>
                 <div class="intro__content row rel z3" data-smooth-item>
@@ -347,7 +360,6 @@
                         </figure>
                     </article>
 
-
                     <article id="connect" class="connect rel f fc aic pea | js-mc-form">
                         <h1 class="f25 s:fh1 lh110 tc f fc aic rel z3">
                             <div class="oh white">
@@ -357,7 +369,7 @@
                                 <div class="js-s-line">Get pricing.</div>
                             </div>
                         </h1>
-                        <form class="connect-form x s:col11 mt35 rel pb75 s:pb175" action="https://everpost.us18.list-manage.com/subscribe/post-json?u=cd384248356daa7bca68c45eb&amp;id=be8345e4b8">
+                        <form class="connect-form x s:col11 mt35 rel pb75 s:pb175" action="#">
 
                             <figure class="connect__bm connect__bm--1 abs w40 pen | js-bm" data-name="great-videos"></figure>
                             <figure class="connect__bm connect__bm--2 abs w50 pen | js-bm" data-name="great-videos"></figure>
@@ -365,47 +377,54 @@
                             <div class="connect-form__fields f fc aic s:fr rel z2">
 
                                 <label class="connect-form__field db x rel" for="form_name">
-        <input type="text" name="form_name" placeholder="Name" class="rel db x tc | js-mc-name" required />
-        <span class="connect-form__border f aic jce ph15">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="21" viewbox="0 0 24 21" fill="none" stroke="#6503A7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
-            <defs>
-              <lineargradient id="connect_b" gradienttransform="matrix(17.6 0 0 -17.6 11785.98 7656)" gradientunits="userSpaceOnUse" x1="-669.66" x2="-668.66" y1="435" y2="434"></lineargradient>
-            </defs>
-            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" fill="url(#connect_b)"></path>
-            <circle cx="12" cy="7" r="4"></circle>
-          </svg>
-        </span>
-      </label>
+                                    <input type="text" name="form_name" placeholder="Name" class="rel db x tc | js-mc-name" required />
+                                    <span class="connect-form__border f aic jce ph15">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="21" viewbox="0 0 24 21" fill="none" stroke="#6503A7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                                            <defs>
+                                                <lineargradient id="connect_b" gradienttransform="matrix(17.6 0 0 -17.6 11785.98 7656)" gradientunits="userSpaceOnUse" x1="-669.66" x2="-668.66" y1="435" y2="434"></lineargradient>
+                                            </defs>
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" fill="url(#connect_b)"></path>
+                                            <circle cx="12" cy="7" r="4"></circle>
+                                        </svg>
+                                    </span>
+                                </label>
 
                                 <label class="connect-form__field db x mb15 s:mb0 rel" for="form_email">
-        <input type="email" name="form_email" placeholder="Email address" class="rel db x tc | js-mc-email" required />
-        <span class="connect-form__border f aic jce ph15">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.45 15.69"><defs><linearGradient id="connect_a" x1="-674.99" y1="430.67" x2="-673.99" y2="430.13" gradientTransform="matrix(21.45 0 0 -15.69 14478.57 6763.04)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#7d16e4"/><stop offset="1" stop-color="#63009f"/><stop offset="1" stop-color="#14022b"/></linearGradient></defs><path d="M19.42.48A2.51 2.51 0 0121.93 3v10.66a2.51 2.51 0 01-2.51 2.51H3a2.5 2.5 0 01-2.5-2.51V3A2.5 2.5 0 013 .48h16.42zM1.79 2.94v10.3l4-3.94a.65.65 0 011 .84l-.07.09-4.46 4.39a1.21 1.21 0 00.72.25h16.44a1.19 1.19 0 00.78-.29l-4.36-4.35a.67.67 0 010-.93.65.65 0 01.84-.07l.09.07 3.85 3.86V3.09l-7.57 7.57a2.51 2.51 0 01-3.42.12l-.13-.12zm17.63-1.16H3a1.26 1.26 0 00-.43.08l7.88 7.88a1.21 1.21 0 001.6.08l.09-.08L20 1.91a1.19 1.19 0 00-.53-.13z" transform="translate(-.48 -.48)" fill="url(#connect_a)"/></svg>        
-        </span>
-      </label>
-
-
+                                    <input type="email" name="form_email" placeholder="Email address" class="rel db x tc | js-mc-email" required />
+                                    <span class="connect-form__border f aic jce ph15">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.45 15.69">
+                                            <defs>
+                                                <linearGradient id="connect_a" x1="-674.99" y1="430.67" x2="-673.99" y2="430.13" gradientTransform="matrix(21.45 0 0 -15.69 14478.57 6763.04)" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0" stop-color="#7d16e4"/>
+                                                    <stop offset="1" stop-color="#63009f"/>
+                                                    <stop offset="1" stop-color="#14022b"/>
+                                                </linearGradient>
+                                            </defs>
+                                            <path d="M19.42.48A2.51 2.51 0 0121.93 3v10.66a2.51 2.51 0 01-2.51 2.51H3a2.5 2.5 0 01-2.5-2.51V3A2.5 2.5 0 013 .48h16.42zM1.79 2.94v10.3l4-3.94a.65.65 0 011 .84l-.07.09-4.46 4.39a1.21 1.21 0 00.72.25h16.44a1.19 1.19 0 00.78-.29l-4.36-4.35a.67.67 0 010-.93.65.65 0 01.84-.07l.09.07 3.85 3.86V3.09l-7.57 7.57a2.51 2.51 0 01-3.42.12l-.13-.12zm17.63-1.16H3a1.26 1.26 0 00-.43.08l7.88 7.88a1.21 1.21 0 001.6.08l.09-.08L20 1.91a1.19 1.19 0 00-.53-.13z" transform="translate(-.48 -.48)" fill="url(#connect_a)"/>
+                                        </svg>
+                                    </span>
+                                </label>
 
                                 <input class="js-mc-proposal" type="text" value="" name="PROPOSAL" id="proposal" hidden />
 
                                 <button type="submit" name="join" aria-label="join" class="rel s:abs mt15 s:mt0 connect-form__submit">
-        <svg xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 68 68">
-          <defs>
-            <linearGradient id="connect_button-a" x1="1.043%" x2="100%" y1="12.508%" y2="92.267%">
-              <stop offset="0%" stop-color="#FFF" stop-opacity=".839"/>
-              <stop offset="100%" stop-color="#FFF" stop-opacity=".346"/>
-            </linearGradient>
-          </defs>
-          <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1 1)">
-            <g stroke="#FFF" transform="translate(22 27)">
-              <line x2="21.533" y1="5.918" y2="5.918"/>
-              <path d="M21.532525,5.91750685 C16.9706868,5.91750685 15.1178781,8.5852424 15.1178781,11.8350137"/>
-              <path d="M21.532525,-9.09494702e-13 C16.9706868,-9.09494702e-13 15.1178781,2.66773554 15.1178781,5.91750685" transform="matrix(1 0 0 -1 0 5.918)"/>
-            </g>
-            <circle cx="33" cy="33" r="33" stroke="url(#connect_button-a)"/>
-          </g>
-        </svg>
-      </button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 68 68">
+                                        <defs>
+                                            <linearGradient id="connect_button-a" x1="1.043%" x2="100%" y1="12.508%" y2="92.267%">
+                                                <stop offset="0%" stop-color="#FFF" stop-opacity=".839"/>
+                                                <stop offset="100%" stop-color="#FFF" stop-opacity=".346"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1 1)">
+                                            <g stroke="#FFF" transform="translate(22 27)">
+                                                <line x2="21.533" y1="5.918" y2="5.918"/>
+                                                <path d="M21.532525,5.91750685 C16.9706868,5.91750685 15.1178781,8.5852424 15.1178781,11.8350137"/>
+                                                <path d="M21.532525,-9.09494702e-13 C16.9706868,-9.09494702e-13 15.1178781,2.66773554 15.1178781,5.91750685" transform="matrix(1 0 0 -1 0 5.918)"/>
+                                            </g>
+                                            <circle cx="33" cy="33" r="33" stroke="url(#connect_button-a)"/>
+                                        </g>
+                                    </svg>
+                                </button>
 
                                 <div class="connect-form__msg abs left x pt20 tc white | js-mc-msg"></div>
 
@@ -416,6 +435,7 @@
                 </div>
             </section>
 
+            <!-- how it works -->
             <div id="how-it-works" class="hiw rel pt75 s:pt100 bg-white z5" data-smooth-item data-stick-start data-stick-end data-offset="0">
                 <div class="rel">
                     <div class="dn s:db abs top left x z5">
@@ -425,75 +445,72 @@
                                     <ul class="hiw-nav-list rel bg-base-white z2">
                                         <li>
                                             <button type="button" data-anchor="#hiw-1" class="hiw-nav-list__btn is-active | js-hiw-link">
-          <div class="rel">
-            <img src="./static/hiw/hiw_nav_01.svg" alt="">
-            <img src="./static/hiw/hiw_nav_01-active.svg" class="abs top left x y"  alt="">
-          </div>
-        </button>
+                                                <div class="rel">
+                                                    <img src="./static/hiw/hiw_nav_01.svg" alt="">
+                                                    <img src="./static/hiw/hiw_nav_01-active.svg" class="abs top left x y"  alt="">
+                                                </div>
+                                            </button>
                                         </li>
                                         <li>
                                             <button type="button" data-anchor="#hiw-2" class="hiw-nav-list__btn | js-hiw-link">
-          <div class="rel">
-            <img src="./static/hiw/hiw_nav_02.svg" alt="">
-            <img src="./static/hiw/hiw_nav_02-active.svg" class="abs top left x y" alt="">
-          </div>
-        </button>
+                                                <div class="rel">
+                                                    <img src="./static/hiw/hiw_nav_02.svg" alt="">
+                                                    <img src="./static/hiw/hiw_nav_02-active.svg" class="abs top left x y" alt="">
+                                                </div>
+                                            </button>
                                         </li>
                                         <li>
                                             <button type="button" data-anchor="#hiw-3" class="hiw-nav-list__btn | js-hiw-link">
-          <div class="rel">
-            <img src="./static/hiw/hiw_nav_03.svg" alt="">
-            <img src="./static/hiw/hiw_nav_03-active.svg" class="abs top left x y" alt="">
-          </div>
-        </button>
+                                                <div class="rel">
+                                                    <img src="./static/hiw/hiw_nav_03.svg" alt="">
+                                                    <img src="./static/hiw/hiw_nav_03-active.svg" class="abs top left x y" alt="">
+                                                </div>
+                                            </button>
                                         </li>
                                         <li>
                                             <button type="button" data-anchor="#hiw-4" class="hiw-nav-list__btn | js-hiw-link">
-          <div class="rel">
-            <img src="./static/hiw/hiw_nav_04.svg" alt="">
-            <img src="./static/hiw/hiw_nav_04-active.svg" class="abs top left x y" alt="">
-          </div>
-        </button>
+                                                <div class="rel">
+                                                    <img src="./static/hiw/hiw_nav_04.svg" alt="">
+                                                    <img src="./static/hiw/hiw_nav_04-active.svg" class="abs top left x y" alt="">
+                                                </div>
+                                            </button>
                                         </li>
                                         <li>
                                             <button type="button" data-anchor="#hiw-5" class="hiw-nav-list__btn | js-hiw-link">
-          <div class="rel">
-            <img src="./static/hiw/hiw_nav_05.svg" alt="">
-            <img src="./static/hiw/hiw_nav_05-active.svg" class="abs top left x y" alt="">
-          </div>
-        </button>
+                                                <div class="rel">
+                                                    <img src="./static/hiw/hiw_nav_05.svg" alt="">
+                                                    <img src="./static/hiw/hiw_nav_05-active.svg" class="abs top left x y" alt="">
+                                                </div>
+                                            </button>
                                         </li>
                                         <li>
                                             <button type="button" data-anchor="#hiw-6" class="hiw-nav-list__btn | js-hiw-link">
-          <div class="rel">
-            <img src="./static/hiw/hiw_nav_06.svg" alt="">
-            <img src="./static/hiw/hiw_nav_06-active.svg" class="abs top left x y" alt="">
-          </div>
-        </button>
+                                                <div class="rel">
+                                                    <img src="./static/hiw/hiw_nav_06.svg" alt="">
+                                                    <img src="./static/hiw/hiw_nav_06-active.svg" class="abs top left x y" alt="">
+                                                </div>
+                                            </button>
                                         </li>
                                     </ul>
                                 </div>
 
                                 <div class="i-arrow pea mt15 | js-s-arrow">
-
                                     <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
-        <defs>
-            <linearGradient id="group-4-copy-2-a" x1="0%" x2="100%" y1="11.667%" y2="92.267%">
-            <stop offset="0%" stop-color="#6042FF"/>
-            <stop offset="100%" stop-color="#B601FF"/>
-            </linearGradient>
-        </defs>
-        <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1 0 0 -1 1 61)">
-            <g stroke="url(#group-4-copy-2-a)" stroke-width=".936" transform="translate(21 24)">
-            <path d="M6.23192226,6.83474937 C4.21792706,8.2057082 6.27728972,10.4029769 6.27728972,10.4029769 L8.00704069,12.6619503 C8.36951539,13.1352451 8.93893394,13.3993283 9.53077788,13.3686586 C10.1225701,13.3379367 10.6621743,13.0162694 10.9746311,12.5080278 L18.4482755,2.78738517 C18.9116644,2.03352473 18.7694131,1.04838931 18.1121016,0.459509188 C17.4547383,-0.129423093 16.4688485,-0.155085539 15.7823426,0.398899914 C15.7823426,0.398899914 8.68388403,5.16564717 6.23192226,6.83474937 Z"/>
-            <path d="M12.487583,6.83474937 C14.5015729,8.2057082 12.442164,10.4029769 12.442164,10.4029769 L10.7124177,12.6619503 C10.3499956,13.1352451 9.78052687,13.3993283 9.18873617,13.3686586 C8.59689381,13.3379367 8.05729106,13.0162694 7.74488676,12.5080278 L0.271210502,2.78738517 C-0.192177165,2.03352473 -0.0499262452,1.04838931 0.60743525,0.459509188 C1.26479675,-0.129423093 2.2506323,-0.155085539 2.93713638,0.398899914 C2.93713638,0.398899914 10.0356278,5.16564717 12.487583,6.83474937 Z"/>
-            </g>
-            <circle cx="30" cy="30" r="30" stroke="#3F1D6F" stroke-width=".5" opacity=".171"/>
-        </g>
-    </svg>
-
+                                        <defs>
+                                            <linearGradient id="group-4-copy-2-a" x1="0%" x2="100%" y1="11.667%" y2="92.267%">
+                                                <stop offset="0%" stop-color="#6042FF"/>
+                                                <stop offset="100%" stop-color="#B601FF"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1 0 0 -1 1 61)">
+                                            <g stroke="url(#group-4-copy-2-a)" stroke-width=".936" transform="translate(21 24)">
+                                                <path d="M6.23192226,6.83474937 C4.21792706,8.2057082 6.27728972,10.4029769 6.27728972,10.4029769 L8.00704069,12.6619503 C8.36951539,13.1352451 8.93893394,13.3993283 9.53077788,13.3686586 C10.1225701,13.3379367 10.6621743,13.0162694 10.9746311,12.5080278 L18.4482755,2.78738517 C18.9116644,2.03352473 18.7694131,1.04838931 18.1121016,0.459509188 C17.4547383,-0.129423093 16.4688485,-0.155085539 15.7823426,0.398899914 C15.7823426,0.398899914 8.68388403,5.16564717 6.23192226,6.83474937 Z"/>
+                                                <path d="M12.487583,6.83474937 C14.5015729,8.2057082 12.442164,10.4029769 12.442164,10.4029769 L10.7124177,12.6619503 C10.3499956,13.1352451 9.78052687,13.3993283 9.18873617,13.3686586 C8.59689381,13.3379367 8.05729106,13.0162694 7.74488676,12.5080278 L0.271210502,2.78738517 C-0.192177165,2.03352473 -0.0499262452,1.04838931 0.60743525,0.459509188 C1.26479675,-0.129423093 2.2506323,-0.155085539 2.93713638,0.398899914 C2.93713638,0.398899914 10.0356278,5.16564717 12.487583,6.83474937 Z"/>
+                                            </g>
+                                            <circle cx="30" cy="30" r="30" stroke="#3F1D6F" stroke-width=".5" opacity=".171"/>
+                                        </g>
+                                    </svg>
                                 </div>
-
                             </nav>
                         </div>
                     </div>
@@ -518,16 +535,24 @@
                         <div class="f fc">
                             <div class="hiw-content x s:col8 s:gml10 rel z2">
                                 <div class="label mb5">02</div>
-                                <h3 class="f20 s:fh2"><span class="dib rel">Upload<span class="uline oh abs " data-scroll="uline"><span class="uline__inner db abs fill"></span></span>
-                                    </span> your footage or we&rsquo;ll pick it up free of charge.</h3>
+                                <h3 class="f20 s:fh2">
+                                    <span class="dib rel">
+                                        Upload
+                                        <span class="uline oh abs " data-scroll="uline">
+                                            <span class="uline__inner db abs fill"></span>
+                                        </span>
+                                    </span>
+                                     your footage or we&rsquo;ll pick it up free of charge.
+                                </h3>
                                 <p class="f15 dark-grey pt20 abs left">Or have <a href="https://www.pricing.everpost.com/" class="u-line-f rel f15 mr5">
-  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9">
-    <g fill="none" fill-rule="evenodd" stroke="#504166" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.36" transform="translate(1 1)">
-      <polyline points="2.147 0 6.911 0 6.911 4.861"/>
-      <line x1="6.4" y1=".611" y2="7.011"/>
-    </g>
-  </svg>
-Everpost</a> shoot it.</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9">
+                                        <g fill="none" fill-rule="evenodd" stroke="#504166" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.36" transform="translate(1 1)">
+                                            <polyline points="2.147 0 6.911 0 6.911 4.861"/>
+                                            <line x1="6.4" y1=".611" y2="7.011"/>
+                                        </g>
+                                    </svg>
+                                    Everpost</a> shoot it.
+                                </p>
                             </div>
                             <div class="x s:col8 rel mha">
                                 <div class="hiw__canvas"></div>
@@ -658,6 +683,7 @@ Everpost</a> shoot it.</p>
                 </div>
             </div>
 
+            <!-- services -->
             <section class="expect pv75 s:pv100 bg-white rel z3 s:mtn100" data-smooth-item data-stick-start data-stick-end>
                 <div class="rel">
                     <div class="rel s:abs top left x" data-stick>
@@ -797,7 +823,7 @@ Everpost</a> shoot it.</p>
                 </div>
             </section>
 
-            <!-- done -->
+            <!-- pricing -->
             <section id="pricing" class="pricing pb75 s:pb100 rel bg-white z3 | js-pricing js-menu-anchor" data-smooth-item>
                 <div class="row lg label ttu mb5 rel">
                     <div class="i-arrow pea abs left top dn s:db | js-s-arrow">
@@ -1181,7 +1207,7 @@ Everpost</a> shoot it.</p>
                 </div>
             </section>
 
-            <!-- done -->
+            <!-- feature -->
             <section id="proof" class="proof pb75 s:pb100 bg-white rel z3 | js-proof" data-smooth-item="data-smooth-item">
                 <div class="row lg label ttu mb5 rel">
                     <div class="i-arrow pea abs left top dn s:db | js-s-arrow">
@@ -1369,6 +1395,7 @@ Everpost</a> shoot it.</p>
                 </div>
             </section>
 
+            <!-- talent -->
             <section class="tal rel">
                 <div id="talent" class="abs top left x y z1 rel pt75 s:pt100 pen" data-smooth-item data-offset="0">
                     <img src="./static/bg-gradient.png" class="abs top left x y wct" alt="">
@@ -1558,19 +1585,19 @@ Everpost</a> shoot it.</p>
 
                                 <a href="./quiz" class="btn sh__btn db custom rel pea">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="176" height="53" viewBox="0 0 176 53">
-        <defs>
-          <linearGradient id="_group-7-copy-a" x1="0%" x2="100%" y1="46.798%" y2="53.531%">
-            <stop offset="0%" stop-color="#FFFFFF"/>
-            <stop offset="100%" stop-color="#FFFFFF"/>
-          </linearGradient>
-          <rect id="_group-7-copy-b" width="173" height="50" x=".463" y=".5" rx="25" />
-        </defs>
-        <use fill="none" fill-rule="evenodd" stroke="url(#_group-7-copy-a)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1 1.387)" xlink:href="#_group-7-copy-b"/>
-      </svg>
-      <div class="btn__txt abs fill f aic jcc z2">
-        Take The Quiz
-      </div>
-    </a>
+                                        <defs>
+                                            <linearGradient id="_group-7-copy-a" x1="0%" x2="100%" y1="46.798%" y2="53.531%">
+                                                <stop offset="0%" stop-color="#FFFFFF"/>
+                                                <stop offset="100%" stop-color="#FFFFFF"/>
+                                            </linearGradient>
+                                            <rect id="_group-7-copy-b" width="173" height="50" x=".463" y=".5" rx="25" />
+                                        </defs>
+                                        <use fill="none" fill-rule="evenodd" stroke="url(#_group-7-copy-a)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1 1.387)" xlink:href="#_group-7-copy-b"/>
+                                    </svg>
+                                    <div class="btn__txt abs fill f aic jcc z2">
+                                        Take The Quiz
+                                    </div>
+                                </a>
                             </div>
                         </article>
 
@@ -1578,29 +1605,26 @@ Everpost</a> shoot it.</p>
                 </div>
             </section>
 
+            <!-- summary -->
             <section class="pv75 s:pv100 rel bg-white z3" data-smooth-item>
                 <div class="row lg label ttu mb5 rel">
-
                     <div class="i-arrow pea abs left top dn s:db | js-s-arrow">
-
                         <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
-        <defs>
-            <linearGradient id="group-4-copy-2-a" x1="0%" x2="100%" y1="11.667%" y2="92.267%">
-            <stop offset="0%" stop-color="#6042FF"/>
-            <stop offset="100%" stop-color="#B601FF"/>
-            </linearGradient>
-        </defs>
-        <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1 0 0 -1 1 61)">
-            <g stroke="url(#group-4-copy-2-a)" stroke-width=".936" transform="translate(21 24)">
-            <path d="M6.23192226,6.83474937 C4.21792706,8.2057082 6.27728972,10.4029769 6.27728972,10.4029769 L8.00704069,12.6619503 C8.36951539,13.1352451 8.93893394,13.3993283 9.53077788,13.3686586 C10.1225701,13.3379367 10.6621743,13.0162694 10.9746311,12.5080278 L18.4482755,2.78738517 C18.9116644,2.03352473 18.7694131,1.04838931 18.1121016,0.459509188 C17.4547383,-0.129423093 16.4688485,-0.155085539 15.7823426,0.398899914 C15.7823426,0.398899914 8.68388403,5.16564717 6.23192226,6.83474937 Z"/>
-            <path d="M12.487583,6.83474937 C14.5015729,8.2057082 12.442164,10.4029769 12.442164,10.4029769 L10.7124177,12.6619503 C10.3499956,13.1352451 9.78052687,13.3993283 9.18873617,13.3686586 C8.59689381,13.3379367 8.05729106,13.0162694 7.74488676,12.5080278 L0.271210502,2.78738517 C-0.192177165,2.03352473 -0.0499262452,1.04838931 0.60743525,0.459509188 C1.26479675,-0.129423093 2.2506323,-0.155085539 2.93713638,0.398899914 C2.93713638,0.398899914 10.0356278,5.16564717 12.487583,6.83474937 Z"/>
-            </g>
-            <circle cx="30" cy="30" r="30" stroke="#3F1D6F" stroke-width=".5" opacity=".171"/>
-        </g>
-    </svg>
-
+                            <defs>
+                                <linearGradient id="group-4-copy-2-a" x1="0%" x2="100%" y1="11.667%" y2="92.267%">
+                                    <stop offset="0%" stop-color="#6042FF"/>
+                                    <stop offset="100%" stop-color="#B601FF"/>
+                                </linearGradient>
+                            </defs>
+                            <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1 0 0 -1 1 61)">
+                                <g stroke="url(#group-4-copy-2-a)" stroke-width=".936" transform="translate(21 24)">
+                                    <path d="M6.23192226,6.83474937 C4.21792706,8.2057082 6.27728972,10.4029769 6.27728972,10.4029769 L8.00704069,12.6619503 C8.36951539,13.1352451 8.93893394,13.3993283 9.53077788,13.3686586 C10.1225701,13.3379367 10.6621743,13.0162694 10.9746311,12.5080278 L18.4482755,2.78738517 C18.9116644,2.03352473 18.7694131,1.04838931 18.1121016,0.459509188 C17.4547383,-0.129423093 16.4688485,-0.155085539 15.7823426,0.398899914 C15.7823426,0.398899914 8.68388403,5.16564717 6.23192226,6.83474937 Z"/>
+                                    <path d="M12.487583,6.83474937 C14.5015729,8.2057082 12.442164,10.4029769 12.442164,10.4029769 L10.7124177,12.6619503 C10.3499956,13.1352451 9.78052687,13.3993283 9.18873617,13.3686586 C8.59689381,13.3379367 8.05729106,13.0162694 7.74488676,12.5080278 L0.271210502,2.78738517 C-0.192177165,2.03352473 -0.0499262452,1.04838931 0.60743525,0.459509188 C1.26479675,-0.129423093 2.2506323,-0.155085539 2.93713638,0.398899914 C2.93713638,0.398899914 10.0356278,5.16564717 12.487583,6.83474937 Z"/>
+                                </g>
+                                <circle cx="30" cy="30" r="30" stroke="#3F1D6F" stroke-width=".5" opacity=".171"/>
+                            </g>
+                        </svg>
                     </div>
-
                     Summary
                 </div>
                 <div class="row lg">
@@ -1615,39 +1639,35 @@ Everpost</a> shoot it.</p>
                 </div>
             </section>
 
+            <!-- testimonials -->
             <section class="pb75 s:pb100 rel bg-white z3" data-smooth-item>
                 <div class="row lg label ttu mb5 rel i-arrow-r">
-
                     <div class="i-arrow pea abs left top dn s:db | js-s-arrow">
-
                         <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
-        <defs>
-            <linearGradient id="group-4-copy-2-a" x1="0%" x2="100%" y1="11.667%" y2="92.267%">
-            <stop offset="0%" stop-color="#6042FF"/>
-            <stop offset="100%" stop-color="#B601FF"/>
-            </linearGradient>
-        </defs>
-        <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1 0 0 -1 1 61)">
-            <g stroke="url(#group-4-copy-2-a)" stroke-width=".936" transform="translate(21 24)">
-            <path d="M6.23192226,6.83474937 C4.21792706,8.2057082 6.27728972,10.4029769 6.27728972,10.4029769 L8.00704069,12.6619503 C8.36951539,13.1352451 8.93893394,13.3993283 9.53077788,13.3686586 C10.1225701,13.3379367 10.6621743,13.0162694 10.9746311,12.5080278 L18.4482755,2.78738517 C18.9116644,2.03352473 18.7694131,1.04838931 18.1121016,0.459509188 C17.4547383,-0.129423093 16.4688485,-0.155085539 15.7823426,0.398899914 C15.7823426,0.398899914 8.68388403,5.16564717 6.23192226,6.83474937 Z"/>
-            <path d="M12.487583,6.83474937 C14.5015729,8.2057082 12.442164,10.4029769 12.442164,10.4029769 L10.7124177,12.6619503 C10.3499956,13.1352451 9.78052687,13.3993283 9.18873617,13.3686586 C8.59689381,13.3379367 8.05729106,13.0162694 7.74488676,12.5080278 L0.271210502,2.78738517 C-0.192177165,2.03352473 -0.0499262452,1.04838931 0.60743525,0.459509188 C1.26479675,-0.129423093 2.2506323,-0.155085539 2.93713638,0.398899914 C2.93713638,0.398899914 10.0356278,5.16564717 12.487583,6.83474937 Z"/>
-            </g>
-            <circle cx="30" cy="30" r="30" stroke="#3F1D6F" stroke-width=".5" opacity=".171"/>
-        </g>
-    </svg>
-
+                            <defs>
+                                <linearGradient id="group-4-copy-2-a" x1="0%" x2="100%" y1="11.667%" y2="92.267%">
+                                    <stop offset="0%" stop-color="#6042FF"/>
+                                    <stop offset="100%" stop-color="#B601FF"/>
+                                </linearGradient>
+                            </defs>
+                            <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1 0 0 -1 1 61)">
+                                <g stroke="url(#group-4-copy-2-a)" stroke-width=".936" transform="translate(21 24)">
+                                    <path d="M6.23192226,6.83474937 C4.21792706,8.2057082 6.27728972,10.4029769 6.27728972,10.4029769 L8.00704069,12.6619503 C8.36951539,13.1352451 8.93893394,13.3993283 9.53077788,13.3686586 C10.1225701,13.3379367 10.6621743,13.0162694 10.9746311,12.5080278 L18.4482755,2.78738517 C18.9116644,2.03352473 18.7694131,1.04838931 18.1121016,0.459509188 C17.4547383,-0.129423093 16.4688485,-0.155085539 15.7823426,0.398899914 C15.7823426,0.398899914 8.68388403,5.16564717 6.23192226,6.83474937 Z"/>
+                                    <path d="M12.487583,6.83474937 C14.5015729,8.2057082 12.442164,10.4029769 12.442164,10.4029769 L10.7124177,12.6619503 C10.3499956,13.1352451 9.78052687,13.3993283 9.18873617,13.3686586 C8.59689381,13.3379367 8.05729106,13.0162694 7.74488676,12.5080278 L0.271210502,2.78738517 C-0.192177165,2.03352473 -0.0499262452,1.04838931 0.60743525,0.459509188 C1.26479675,-0.129423093 2.2506323,-0.155085539 2.93713638,0.398899914 C2.93713638,0.398899914 10.0356278,5.16564717 12.487583,6.83474937 Z"/>
+                                </g>
+                                <circle cx="30" cy="30" r="30" stroke="#3F1D6F" stroke-width=".5" opacity=".171"/>
+                            </g>
+                        </svg>
                     </div>
-
                     Testimonials
                 </div>
                 <div id="testimonials" class="row lg">
                     <h1 class="f20 s:fh2 x s:col7">What do people think?</h1>
 
-
                     <article class="tm f fc s:fr mt45">
                         <div class="tm__info rel x s:col9">
                             <figure class="tm__img rel aspect bg-purple" style="--aspect: 53.7%">
-                                <img data-lazy-src="./images/576d66d28e39ef8586566fc3dbfe0331a0a93371-1054x566.jpg" class="abs top left x y o-cover" alt="">
+                                <img src="./static/images/testimonials (1).jpg" class="abs top left x y o-cover" alt="">
                             </figure>
                             <div class="a-content s:gpr1 s:gpl1 rel z2 mb15 s:mb0">
                                 <div class="dn s:db label label--light mb5 ttu">Client</div>
@@ -1661,7 +1681,7 @@ Everpost</a> shoot it.</p>
                             <div class="tm__icon dn s:db abs top left | js-bm-d" data-name="testimonial"></div>
                             <blockquote class="f15 m0 dark-grey">They deliver the most gorgeous ads, on budget and on time, again and again. Their transparency and humor are refreshing, and the end results continue to be exactly what we never knew we always wanted.</blockquote>
                             <figure class="tm__logo col7 s:col2 mt15 s:mt25">
-                                <img src="./images/9dcfa4285ece5ddb72f975a7f8948868c43c4a44-137x62.svg" alt="Zevia Natural Drinks">
+                                <img src="./static/images/zevia.svg" alt="Zevia Natural Drinks">
                             </figure>
                         </div>
                     </article>
@@ -1669,7 +1689,7 @@ Everpost</a> shoot it.</p>
                     <article class="tm f fc s:fr mt45">
                         <div class="tm__info rel x s:col9">
                             <figure class="tm__img rel aspect bg-purple" style="--aspect: 53.7%">
-                                <img data-lazy-src="./images/35047c6edad9772b6bce5065b2ed2d19f38dde03-1050x564.jpg" class="abs top left x y o-cover" alt="">
+                                <img src="./static/images/testimonials (2).jpg" class="abs top left x y o-cover" alt="">
                             </figure>
                             <div class="a-content s:gpr1 s:gpl1 rel z2 mb15 s:mb0">
                                 <div class="dn s:db label label--light mb5 ttu">Client</div>
@@ -1683,11 +1703,10 @@ Everpost</a> shoot it.</p>
                             <div class="tm__icon dn s:db abs top left | js-bm-d" data-name="testimonial"></div>
                             <blockquote class="f15 m0 dark-grey">They always exceed expectations when it comes to the final product and are always on time hitting deadlines, no matter how short the turnaround time might be.</blockquote>
                             <figure class="tm__logo col7 s:col2 mt15 s:mt25">
-                                <img src="./images/0f1d5a78600d61ee2c3eb8c78fbc3e724dc20302-136x68.svg" alt="PUMA">
+                                <img src="./static/images/puma.svg" alt="PUMA">
                             </figure>
                         </div>
                     </article>
-
 
                 </div>
             </section>
