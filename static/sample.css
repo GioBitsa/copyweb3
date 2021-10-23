@@ -1,3 +1,7 @@
 .intro.js-intro {
     background-color: rebeccapurple;
 }
+
+.hero__inner{
+    top: 30vh;
+}
