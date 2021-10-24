@@ -11,19 +11,23 @@
     <link rel="stylesheet" href="./static/app.css">
     <link rel="stylesheet" href="./static/sample.css">
 
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 <body class="bg-white">
 
-    <div class="mask fix fill x y pen f aic jcc z10 | js-mask js-pe">
-        <!-- <div class="abs fill bg-white | js-mask-bg"></div> -->
-        <!-- <div class="mask__circle rel | js-mask-circle">
+    <!-- <div class="mask fix fill x y pen f aic jcc z10 | js-mask js-pe">
+        <div class="abs fill bg-white | js-mask-bg"></div>
+        <div class="mask__circle rel | js-mask-circle">
             <svg class="abs top left x y" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102.5 102.5">
                 <circle class="mask__outline | js-mask-outline" cx="51.25" cy="51.25" r="49" fill="none" stroke="#a08fb7" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5" />
             </svg>
             <div class="mask__clock abs top left x y | js-mask-clock"></div>
-        </div> -->
-    </div>
+        </div>
+    </div> -->
 
     <main class="main z8" role="main" itemscope itemprop="mainContentOfPage" data-router-wrapper data-smooth>
         <article data-router-view="home" id="home" class="js-gl">
@@ -267,7 +271,7 @@
             <!-- intro -->
             <section class="intro rel pen | js-intro">
                 <div class="abs fill z1" data-smooth-item>
-                    <img data-lazy-load="/static/bg-gradient.png" class="intro__bg abs top left x y wct | js-intro__bg" alt="">
+                    <img src="./static/bg-gradient.png" class="intro__bg abs top left x y wct | js-intro__bg" alt="">
                     <div class="curve abs left right">
                         <svg xmlns="http://www.w3.org/2000/svg" width="1646" height="53" viewBox="0 0 1646 53" class="x y">
                             <path fill="#F2F1F8" fill-rule="evenodd" d="M0,1.77885024 C327.043564,31.2596167 603.547885,46 829.512962,46 C1055.47804,46 1327.64038,31.2596167 1646,1.77885024 L1646,1.77885024 L1646,54 L0,54 Z" transform="translate(0 -1)"/>
@@ -286,9 +290,22 @@
                                 </div>
                             </h1>
                         </header>
-                        <figure class="aspect rel pea" data-gl-id="intro_1" data-gl-component="PlaneVideo" data-src="./static/Main_Video.mp4" data-lazy-src-m="/static/Main_Video.jpg">
+                        <figure class="aspect rel pea">
+                            
+                            <video id="figureVideo" src="./static/video.mp4" loop autoplay muted></video>
 
-                            <button type="button" name="play" aria-label="play" class="i-play  abs f aic jcc pea" data-v-src="https://player.vimeo.com/external/619469672.hd.mp4?s=b25c337fcf733f24f80eae58749f799370624073&amp;profile_id=175"></button>
+                            <button type="button" name="play" aria-label="play" class="i-play  abs f aic jcc pea">
+
+                                <a id="play-video" class="video-play-button" href="#">
+                                    <span></span>
+                                </a>
+                                  
+                                <div id="video-overlay" class="video-overlay">
+
+                                    <a class="video-overlay-close">&times;</a>
+                                </div>
+                                
+                            </button>
 
                             <ul class="vid-item__infos abs bottom right ph60 pv50 z2 dn s:f">
 
@@ -304,7 +321,7 @@
                                     <div class="label label--transparent">International</div>
                                 </li>
 
-                                <ul>
+                            </ul>
                         </figure>
                     </article>
 
@@ -442,7 +459,7 @@
                                     </ul>
                                 </div>
 
-                                <div class="i-arrow pea mt15 | js-s-arrow">
+                                <a href="#services" class="i-arrow pea mt15 | js-s-arrow">
                                     <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
                                         <defs>
                                             <linearGradient id="group-4-copy-2-a" x1="0%" x2="100%" y1="11.667%" y2="92.267%">
@@ -458,7 +475,7 @@
                                             <circle cx="30" cy="30" r="30" stroke="#3F1D6F" stroke-width=".5" opacity=".171"/>
                                         </g>
                                     </svg>
-                                </div>
+                                </a>
                             </nav>
                         </div>
                     </div>
@@ -632,31 +649,29 @@
             </div>
 
             <!-- services -->
-            <section class="expect pv75 s:pv100 bg-white rel z3 s:mtn100" data-smooth-item data-stick-start data-stick-end>
+            <section id="services" class="expect pv75 s:pv100 bg-white rel z3 s:mtn100" data-smooth-item data-stick-start data-stick-end>
                 <div class="rel">
                     <div class="rel s:abs top left x" data-stick>
                         <div class="row lg label ttu mb5 rel">
 
-                            <div class="i-arrow pea abs left top dn s:db | js-s-arrow">
+                            <a href="#pricing" class="i-arrow pea abs left top dn s:db | js-s-arrow">
 
                                 <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
-        <defs>
-            <linearGradient id="group-4-copy-2-a" x1="0%" x2="100%" y1="11.667%" y2="92.267%">
-            <stop offset="0%" stop-color="#6042FF"/>
-            <stop offset="100%" stop-color="#B601FF"/>
-            </linearGradient>
-        </defs>
-        <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1 0 0 -1 1 61)">
-            <g stroke="url(#group-4-copy-2-a)" stroke-width=".936" transform="translate(21 24)">
-            <path d="M6.23192226,6.83474937 C4.21792706,8.2057082 6.27728972,10.4029769 6.27728972,10.4029769 L8.00704069,12.6619503 C8.36951539,13.1352451 8.93893394,13.3993283 9.53077788,13.3686586 C10.1225701,13.3379367 10.6621743,13.0162694 10.9746311,12.5080278 L18.4482755,2.78738517 C18.9116644,2.03352473 18.7694131,1.04838931 18.1121016,0.459509188 C17.4547383,-0.129423093 16.4688485,-0.155085539 15.7823426,0.398899914 C15.7823426,0.398899914 8.68388403,5.16564717 6.23192226,6.83474937 Z"/>
-            <path d="M12.487583,6.83474937 C14.5015729,8.2057082 12.442164,10.4029769 12.442164,10.4029769 L10.7124177,12.6619503 C10.3499956,13.1352451 9.78052687,13.3993283 9.18873617,13.3686586 C8.59689381,13.3379367 8.05729106,13.0162694 7.74488676,12.5080278 L0.271210502,2.78738517 C-0.192177165,2.03352473 -0.0499262452,1.04838931 0.60743525,0.459509188 C1.26479675,-0.129423093 2.2506323,-0.155085539 2.93713638,0.398899914 C2.93713638,0.398899914 10.0356278,5.16564717 12.487583,6.83474937 Z"/>
-            </g>
-            <circle cx="30" cy="30" r="30" stroke="#3F1D6F" stroke-width=".5" opacity=".171"/>
-        </g>
-    </svg>
-
-                            </div>
-
+                                    <defs>
+                                        <linearGradient id="group-4-copy-2-a" x1="0%" x2="100%" y1="11.667%" y2="92.267%">
+                                            <stop offset="0%" stop-color="#6042FF"/>
+                                            <stop offset="100%" stop-color="#B601FF"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1 0 0 -1 1 61)">
+                                        <g stroke="url(#group-4-copy-2-a)" stroke-width=".936" transform="translate(21 24)">
+                                            <path d="M6.23192226,6.83474937 C4.21792706,8.2057082 6.27728972,10.4029769 6.27728972,10.4029769 L8.00704069,12.6619503 C8.36951539,13.1352451 8.93893394,13.3993283 9.53077788,13.3686586 C10.1225701,13.3379367 10.6621743,13.0162694 10.9746311,12.5080278 L18.4482755,2.78738517 C18.9116644,2.03352473 18.7694131,1.04838931 18.1121016,0.459509188 C17.4547383,-0.129423093 16.4688485,-0.155085539 15.7823426,0.398899914 C15.7823426,0.398899914 8.68388403,5.16564717 6.23192226,6.83474937 Z"/>
+                                            <path d="M12.487583,6.83474937 C14.5015729,8.2057082 12.442164,10.4029769 12.442164,10.4029769 L10.7124177,12.6619503 C10.3499956,13.1352451 9.78052687,13.3993283 9.18873617,13.3686586 C8.59689381,13.3379367 8.05729106,13.0162694 7.74488676,12.5080278 L0.271210502,2.78738517 C-0.192177165,2.03352473 -0.0499262452,1.04838931 0.60743525,0.459509188 C1.26479675,-0.129423093 2.2506323,-0.155085539 2.93713638,0.398899914 C2.93713638,0.398899914 10.0356278,5.16564717 12.487583,6.83474937 Z"/>
+                                        </g>
+                                        <circle cx="30" cy="30" r="30" stroke="#3F1D6F" stroke-width=".5" opacity=".171"/>
+                                    </g>
+                                </svg>
+                            </a>
                             Services
                         </div>
                         <div class="row lg">
@@ -774,7 +789,7 @@
             <!-- pricing -->
             <section id="pricing" class="pricing pb75 s:pb100 rel bg-white z3 | js-pricing js-menu-anchor" data-smooth-item>
                 <div class="row lg label ttu mb5 rel">
-                    <div class="i-arrow pea abs left top dn s:db | js-s-arrow">
+                    <a href="#proof" class="i-arrow pea abs left top dn s:db | js-s-arrow">
                         <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
                             <defs>
                                 <linearGradient id="group-4-copy-2-a" x1="0%" x2="100%" y1="11.667%" y2="92.267%">
@@ -790,7 +805,7 @@
                                 <circle cx="30" cy="30" r="30" stroke="#3F1D6F" stroke-width=".5" opacity=".171"/>
                             </g>
                         </svg>
-                    </div>
+                    </a>
                     Packages
                 </div>
                 <div class="row lg">
@@ -1158,7 +1173,7 @@
             <!-- feature -->
             <section id="proof" class="proof pb75 s:pb100 bg-white rel z3 | js-proof" data-smooth-item="data-smooth-item">
                 <div class="row lg label ttu mb5 rel">
-                    <div class="i-arrow pea abs left top dn s:db | js-s-arrow">
+                    <a href="#talent" class="i-arrow pea abs left top dn s:db | js-s-arrow">
                         <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
                             <defs>
                                 <linearGradient id="group-4-copy-2-a" x1="0%" x2="100%" y1="11.667%" y2="92.267%">
@@ -1174,7 +1189,7 @@
                                 <circle cx="30" cy="30" r="30" stroke="#3F1D6F" stroke-width=".5" opacity=".171"/>
                             </g>
                         </svg>
-                    </div>
+                    </a>
                     Featured work
                 </div>
 
@@ -1344,7 +1359,7 @@
             </section>
 
             <!-- talent -->
-            <section class="tal rel">
+            <section id="talent" class="tal rel">
                 <div id="talent" class="abs top left x y z1 rel pt75 s:pt100 pen" data-smooth-item data-offset="0">
                     <img src="./static/bg-gradient.png" class="abs top left x y wct" alt="">
                     <!-- bottom curves of background image -->
@@ -1366,7 +1381,7 @@
                         <article class="vid-item f fc rel mb75 s:mb90">
                             <header class="vid-item__head rel z3" data-from='{"yPercent": "-100"}' data-to='{"yPercent": "65"}'>
                                 <div class="gpl2 label label--dark ttu mb5 rel i-arrow-r">
-                                    <div class="i-arrow pea abs left top dn s:db | js-s-arrow">
+                                    <a href="#summary" class="i-arrow pea abs left top dn s:db | js-s-arrow">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
                                             <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" transform="translate(1 1)">
                                                 <g stroke="#FFF" stroke-width=".936" transform="translate(21 24)">
@@ -1376,7 +1391,7 @@
                                                 <circle cx="30" cy="30" r="30" stroke="#2E006E" stroke-width=".6" opacity=".746"/>
                                             </g>
                                         </svg>
-                                    </div>
+                                    </a>
                                     Our Expertise
                                 </div>
                                 <h1 class="gpl2 f25 s:fh1 lh110">
@@ -1554,9 +1569,9 @@
             </section>
 
             <!-- summary -->
-            <section class="pv75 s:pv100 rel bg-white z3" data-smooth-item>
+            <section id="summary" class="pv75 s:pv100 rel bg-white z3" data-smooth-item>
                 <div class="row lg label ttu mb5 rel">
-                    <div class="i-arrow pea abs left top dn s:db | js-s-arrow">
+                    <a href="#testimonials" class="i-arrow pea abs left top dn s:db | js-s-arrow">
                         <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
                             <defs>
                                 <linearGradient id="group-4-copy-2-a" x1="0%" x2="100%" y1="11.667%" y2="92.267%">
@@ -1572,7 +1587,7 @@
                                 <circle cx="30" cy="30" r="30" stroke="#3F1D6F" stroke-width=".5" opacity=".171"/>
                             </g>
                         </svg>
-                    </div>
+                    </a>
                     Summary
                 </div>
                 <div class="row lg">
@@ -1588,9 +1603,9 @@
             </section>
 
             <!-- testimonials -->
-            <section class="pb75 s:pb100 rel bg-white z3" data-smooth-item>
+            <section id="testimonials" class="pb75 s:pb100 rel bg-white z3" data-smooth-item>
                 <div class="row lg label ttu mb5 rel i-arrow-r">
-                    <div class="i-arrow pea abs left top dn s:db | js-s-arrow">
+                    <a href="#home" class="i-arrow pea abs left top dn s:db | js-s-arrow">
                         <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
                             <defs>
                                 <linearGradient id="group-4-copy-2-a" x1="0%" x2="100%" y1="11.667%" y2="92.267%">
@@ -1606,7 +1621,7 @@
                                 <circle cx="30" cy="30" r="30" stroke="#3F1D6F" stroke-width=".5" opacity=".171"/>
                             </g>
                         </svg>
-                    </div>
+                    </a>
                     Testimonials
                 </div>
                 <div id="testimonials" class="row lg">
@@ -1662,27 +1677,23 @@
             <footer class="foot pv60 s:pv40 bg-purple-light s:ph20 rel z5" data-smooth-item>
                 <div class="row f fc s:fr s:jcb">
                     <div class="foot-item lg rel i-arrow-r">
-
-                        <div class="i-arrow pea abs left top dn s:db | js-s-arrow">
-
+                        <a href="#home" class="i-arrow pea abs left top dn s:db | js-s-arrow">
                             <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
-        <defs>
-            <linearGradient id="group-4-copy-2-a" x1="0%" x2="100%" y1="11.667%" y2="92.267%">
-            <stop offset="0%" stop-color="#6042FF"/>
-            <stop offset="100%" stop-color="#B601FF"/>
-            </linearGradient>
-        </defs>
-        <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1 0 0 -1 1 61)">
-            <g stroke="url(#group-4-copy-2-a)" stroke-width=".936" transform="translate(21 24)">
-            <path d="M6.23192226,6.83474937 C4.21792706,8.2057082 6.27728972,10.4029769 6.27728972,10.4029769 L8.00704069,12.6619503 C8.36951539,13.1352451 8.93893394,13.3993283 9.53077788,13.3686586 C10.1225701,13.3379367 10.6621743,13.0162694 10.9746311,12.5080278 L18.4482755,2.78738517 C18.9116644,2.03352473 18.7694131,1.04838931 18.1121016,0.459509188 C17.4547383,-0.129423093 16.4688485,-0.155085539 15.7823426,0.398899914 C15.7823426,0.398899914 8.68388403,5.16564717 6.23192226,6.83474937 Z"/>
-            <path d="M12.487583,6.83474937 C14.5015729,8.2057082 12.442164,10.4029769 12.442164,10.4029769 L10.7124177,12.6619503 C10.3499956,13.1352451 9.78052687,13.3993283 9.18873617,13.3686586 C8.59689381,13.3379367 8.05729106,13.0162694 7.74488676,12.5080278 L0.271210502,2.78738517 C-0.192177165,2.03352473 -0.0499262452,1.04838931 0.60743525,0.459509188 C1.26479675,-0.129423093 2.2506323,-0.155085539 2.93713638,0.398899914 C2.93713638,0.398899914 10.0356278,5.16564717 12.487583,6.83474937 Z"/>
-            </g>
-            <circle cx="30" cy="30" r="30" stroke="#3F1D6F" stroke-width=".5" opacity=".171"/>
-        </g>
-    </svg>
-
-                        </div>
-
+                                <defs>
+                                    <linearGradient id="group-4-copy-2-a" x1="0%" x2="100%" y1="11.667%" y2="92.267%">
+                                        <stop offset="0%" stop-color="#6042FF"/>
+                                        <stop offset="100%" stop-color="#B601FF"/>
+                                    </linearGradient>
+                                </defs>
+                                <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1 0 0 -1 1 61)">
+                                    <g stroke="url(#group-4-copy-2-a)" stroke-width=".936" transform="translate(21 24)">
+                                        <path d="M6.23192226,6.83474937 C4.21792706,8.2057082 6.27728972,10.4029769 6.27728972,10.4029769 L8.00704069,12.6619503 C8.36951539,13.1352451 8.93893394,13.3993283 9.53077788,13.3686586 C10.1225701,13.3379367 10.6621743,13.0162694 10.9746311,12.5080278 L18.4482755,2.78738517 C18.9116644,2.03352473 18.7694131,1.04838931 18.1121016,0.459509188 C17.4547383,-0.129423093 16.4688485,-0.155085539 15.7823426,0.398899914 C15.7823426,0.398899914 8.68388403,5.16564717 6.23192226,6.83474937 Z"/>
+                                        <path d="M12.487583,6.83474937 C14.5015729,8.2057082 12.442164,10.4029769 12.442164,10.4029769 L10.7124177,12.6619503 C10.3499956,13.1352451 9.78052687,13.3993283 9.18873617,13.3686586 C8.59689381,13.3379367 8.05729106,13.0162694 7.74488676,12.5080278 L0.271210502,2.78738517 C-0.192177165,2.03352473 -0.0499262452,1.04838931 0.60743525,0.459509188 C1.26479675,-0.129423093 2.2506323,-0.155085539 2.93713638,0.398899914 C2.93713638,0.398899914 10.0356278,5.16564717 12.487583,6.83474937 Z"/>
+                                    </g>
+                                    <circle cx="30" cy="30" r="30" stroke="#3F1D6F" stroke-width=".5" opacity=".171"/>
+                                </g>
+                            </svg>
+                        </a>
                         <h2 class="f20 s:fh2 mb30 s:mb0">Connect with us.</h2>
                     </div>
                     <div class="foot-item f fc x s:col11 s:gpr4">
@@ -1690,46 +1701,50 @@
 
                             <li class="mr30">
                                 <a href="https://www.facebook.com/Everpost-110025387381856/" target="_blank" rel="noreferrer" class="f18 rel u-line-f">
-  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9">
-    <g fill="none" fill-rule="evenodd" stroke="#504166" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.36" transform="translate(1 1)">
-      <polyline points="2.147 0 6.911 0 6.911 4.861"/>
-      <line x1="6.4" y1=".611" y2="7.011"/>
-    </g>
-  </svg>
-Fb</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9">
+                                        <g fill="none" fill-rule="evenodd" stroke="#504166" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.36" transform="translate(1 1)">
+                                            <polyline points="2.147 0 6.911 0 6.911 4.861"/>
+                                            <line x1="6.4" y1=".611" y2="7.011"/>
+                                        </g>
+                                    </svg>
+                                    Fb
+                                </a>
                             </li>
 
                             <li class="mr30">
                                 <a href="http://www.instagram.com/meeteverpost" target="_blank" rel="noreferrer" class="f18 rel u-line-f">
-  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9">
-    <g fill="none" fill-rule="evenodd" stroke="#504166" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.36" transform="translate(1 1)">
-      <polyline points="2.147 0 6.911 0 6.911 4.861"/>
-      <line x1="6.4" y1=".611" y2="7.011"/>
-    </g>
-  </svg>
-Ig</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9">
+                                        <g fill="none" fill-rule="evenodd" stroke="#504166" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.36" transform="translate(1 1)">
+                                            <polyline points="2.147 0 6.911 0 6.911 4.861"/>
+                                            <line x1="6.4" y1=".611" y2="7.011"/>
+                                        </g>
+                                    </svg>
+                                    Ig
+                                </a>
                             </li>
 
                             <li class="mr30">
                                 <a href="https://www.youtube.com/channel/UCgkph3DJlwT1O2-OPuflraw" target="_blank" rel="noreferrer" class="f18 rel u-line-f">
-  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9">
-    <g fill="none" fill-rule="evenodd" stroke="#504166" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.36" transform="translate(1 1)">
-      <polyline points="2.147 0 6.911 0 6.911 4.861"/>
-      <line x1="6.4" y1=".611" y2="7.011"/>
-    </g>
-  </svg>
-Yt</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9">
+                                        <g fill="none" fill-rule="evenodd" stroke="#504166" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.36" transform="translate(1 1)">
+                                            <polyline points="2.147 0 6.911 0 6.911 4.861"/>
+                                            <line x1="6.4" y1=".611" y2="7.011"/>
+                                        </g>
+                                    </svg>
+                                    Yt
+                                </a>
                             </li>
 
                             <li class="mr30">
                                 <a href="https://www.linkedin.com/company/meeteverpost/" target="_blank" rel="noreferrer" class="f18 rel u-line-f">
-  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9">
-    <g fill="none" fill-rule="evenodd" stroke="#504166" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.36" transform="translate(1 1)">
-      <polyline points="2.147 0 6.911 0 6.911 4.861"/>
-      <line x1="6.4" y1=".611" y2="7.011"/>
-    </g>
-  </svg>
-Li</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9">
+                                        <g fill="none" fill-rule="evenodd" stroke="#504166" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.36" transform="translate(1 1)">
+                                            <polyline points="2.147 0 6.911 0 6.911 4.861"/>
+                                            <line x1="6.4" y1=".611" y2="7.011"/>
+                                        </g>
+                                    </svg>
+                                    Li
+                                </a>
                             </li>
 
                         </ul>
@@ -1746,6 +1761,8 @@ Li</a>
 
     </main>
     
+    <script src="./static/app.js"></script>
+
 </body>
 
 </html>
