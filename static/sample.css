@@ -16,11 +16,13 @@
     height: 300vh;
 }
 
-.intro__content .aspect{
+.intro__content .aspect,
+.vid-item .aspect{
     padding-top: 0;
 }
 
-.intro__content .aspect video {
+.intro__content .aspect video,
+.vid-item .aspect video {
     width: 100%;
     height: 100%;
 }
@@ -34,12 +36,14 @@
 	stroke-dashoffset: 314;
 }
 
-.intro__content .i-play {
+.intro__content .i-play,
+.vid-item .i-play {
     width: 100%;
     height: 100%;
 }
 
-.intro__content .i-play svg {
+.intro__content .i-play svg,
+.vid-item .i-play svg {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -145,7 +149,8 @@
     opacity: 1;
   }
   
-  .video-overlay-close {
+  .video-overlay-close,
+  .video-overlay-close2 {
     position: absolute;
     z-index: 1000;
     top: 15px;
@@ -158,8 +163,15 @@
     cursor: pointer;
     transition: all 200ms;
   }
+
+  .video-overlay-close2{
+    padding: 0 5px;
+    top: 70px;
+    right: 70px;
+  }
   
-  .video-overlay-close:hover {
+  .video-overlay-close:hover,
+  .video-overlay-close2:hover {
     color: rebeccapurple;
   }
   
@@ -172,3 +184,21 @@
     /* height: auto; */
     box-shadow: 0 0 15px rgba(0,0,0,0.75);
   }
+
+
+.aspect {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.i-play.open {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+
+/* carousel */
+
+
