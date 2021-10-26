@@ -201,4 +201,39 @@
 
 /* carousel */
 
+.slide-wrapper {
+	position: relative;
+}
 
+.slide-items,
+.slide-items2 {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	/* white-space: nowrap; */
+	font-size: 0;
+	cursor: grab;
+}
+
+.slide-item,
+.slide-item2 {
+	user-select: none;
+	width: 50%;
+	height:100%;
+}
+
+
+.feature-btn-next {
+  cursor: pointer;
+  z-index: 20;
+}
+
+@media screen and (max-width: 649px) {
+  .slide-item,
+  .slide-item2 {
+    min-width: 100%;
+  }
+  .col22{
+    width: 100%;
+  }
+}
