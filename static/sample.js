@@ -469,8 +469,74 @@ const move2 = (e) => {
 })();
 
 
-// const featureBtnNext = document.getElementById('feature-btn-next');
 
-// featureBtnNext.addEventListener('click', (e) => {
-  
+// hero scrolling effect
+
+$(document).ready(function () {
+  var $horizontal = $('.hero-img');
+
+  $(window).scroll(function () {
+      var s = $(this).scrollTop(),
+          d = $(document).height(),
+          c = $(this).height();
+
+      scrollPercent = (s / (d - c));
+
+      var position = (scrollPercent * ($(document).width() + 20 * $horizontal.width()));
+      
+      $horizontal.css({
+          'right': position
+      });
+  });
+});
 // })
+
+
+// how it works slide 
+
+$(window).scroll(function(){
+  if($(window).scrollTop() > $('#how-it-works').offset().top && $(window).scrollTop() + $(window).height()/2 < $('#how-it-works').offset().top + $('#how-it-works').height()){
+    $('#how-it-works-slider').css('position', 'fixed');
+    $('#how-it-works-slider').css('top', '20%');
+  }else{
+    $('#how-it-works-slider').css('position', 'relative');
+    $('#how-it-works-slider').css('top', '0');
+  }
+})
+
+
+// services slide 
+
+$(window).scroll(function(){
+  if($(window).scrollTop() > $('#services').offset().top && $(window).scrollTop() < $('#services').offset().top + $('#services').height()){
+    $('#services-header').css('position', 'fixed');
+    $('#services-header').css('top', '20%');
+  }else{
+    $('#services-header').css('position', 'absolute');
+    $('#services-header').css('top', '0');
+  }
+})
+
+
+// hero text animation
+
+$(window).scroll(function(){
+  if($(window).scrollTop() < 800){
+    if($('.js-h-txt-1').hasClass('animate-text')){
+      $('.js-h-txt-1').removeClass('animate-text')
+    }
+    $('.js-h-txt-2').addClass('animate-text')
+    $('.js-h-txt-3').addClass('animate-text')
+  }else if($(window).scrollTop() < 1600){
+    $('.js-h-txt-1').addClass('animate-text')
+    if($('.js-h-txt-2').hasClass('animate-text')){
+      $('.js-h-txt-2').removeClass('animate-text')
+    }
+    $('.js-h-txt-3').addClass('animate-text')
+  }else{
+    $('.js-h-txt-2').addClass('animate-text')
+    if($('.js-h-txt-3').hasClass('animate-text')){
+      $('.js-h-txt-3').removeClass('animate-text')
+    }
+  }
+})
