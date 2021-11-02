@@ -265,3 +265,15 @@
     opacity: 0;
   }
 }
+
+
+
+.js-bm-video{
+  width: 150%;
+}
+
+@media (max-width: 649px) {
+  .js-bm-video {
+    width: 100%;
+  }
+}

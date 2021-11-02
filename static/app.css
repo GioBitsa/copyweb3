@@ -5699,14 +5699,14 @@ ul.product_video_list li {
         left: 0;
         width: 100%;
         height: 100%;
-        transform: scale(1.75)
+        /* transform: scale(1.75) */
     }
 }
 
 @media (min-width:650px) {
     .hiw__bm--1 {
-        bottom: 15.5%;
-        left: -6.5%;
+        bottom: 50%;
+        left: 20%;
         width: 200%
     }
     .hiw__bm--2 {
@@ -5717,27 +5717,28 @@ ul.product_video_list li {
     }
     .hiw__bm--7 {
         bottom: 14%;
-        left: -8%;
+        left: 10%;
         width: 210%;
         height: 200%
     }
     .hiw__bm--8 {
         width: 225%;
         height: 200%;
-        left: -135%;
+        left: -125%;
         top: -125%
     }
     .hiw__bm--9 {
         width: 200%;
         height: 200%;
-        left: .2%;
+        left: 10%;
         top: -108.5%
     }
     .hiw__bm--slide {
         top: 50%;
         left: 50%;
-        width: 200%;
-        height: 200%;
+        /* width: 200%; */
+        width: 150%;
+        /* height: 200%; */
         transform: translate(-50%, -50%);
         background-color: #f2f1f8
     }

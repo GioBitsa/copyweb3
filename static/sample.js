@@ -44,6 +44,7 @@ $('#play-video').on('click', function(e){
 // talent videos
 
 // first video
+
 $('#play-video2').on('click', function(e){
   e.preventDefault();
   $('#video-overlay2').addClass('open');
@@ -67,6 +68,7 @@ function close_video() {
 
 
 // second video
+
 $('#play-video3').on('click', function(e){
   e.preventDefault();
   $('#video-overlay3').addClass('open');
@@ -90,6 +92,7 @@ function close_video() {
 
 
 // third video
+
 $('#play-video4').on('click', function(e){
   e.preventDefault();
   $('#video-overlay4').addClass('open');
@@ -114,6 +117,7 @@ function close_video() {
 
 
 // fourth video
+
 $('#play-video5').on('click', function(e){
   e.preventDefault();
   $('#video-overlay5').addClass('open');
@@ -142,6 +146,7 @@ function close_video() {
 
 
 // first video
+
 $('#pricing-video1').on('click', function(e){
   e.preventDefault();
   $('#pricing-overlay1').addClass('open');
@@ -165,6 +170,7 @@ function close_pricing_overlay1() {
 
 
 // second video
+
 $('#pricing-video2').on('click', function(e){
   e.preventDefault();
   $('#pricing-overlay2').addClass('open');
@@ -188,6 +194,7 @@ function close_pricing_overlay2() {
 
 
 // third video
+
 $('#pricing-video3').on('click', function(e){
   e.preventDefault();
   $('#pricing-overlay3').addClass('open');
@@ -214,6 +221,7 @@ function close_pricing_overlay3() {
 // featured work videos 
 
 // first video
+
 $('#feature-video1').on('click', function(e){
   e.preventDefault();
   $('#feature-overlay1').addClass('open');
@@ -237,6 +245,7 @@ function close_overlay1() {
 
 
 // second video
+
 $('#feature-video2').on('click', function(e){
   e.preventDefault();
   $('#feature-overlay2').addClass('open');
@@ -260,6 +269,7 @@ function close_overlay2() {
 
 
 // third video
+
 $('#feature-video3').on('click', function(e){
   e.preventDefault();
   $('#feature-overlay3').addClass('open');
@@ -283,6 +293,7 @@ function close_overlay3() {
 
 
 // fourth video
+
 $('#feature-video4').on('click', function(e){
   e.preventDefault();
   $('#feature-overlay4').addClass('open');
@@ -306,6 +317,7 @@ function close_overlay4() {
 
 
 // fifth video
+
 $('#feature-video5').on('click', function(e){
   e.preventDefault();
   $('#feature-overlay5').addClass('open');
@@ -329,6 +341,7 @@ function close_overlay5() {
 
 
 // sixth video
+
 $('#feature-video6').on('click', function(e){
   e.preventDefault();
   $('#feature-overlay6').addClass('open');
@@ -352,6 +365,7 @@ function close_overlay6() {
 
 
 // seventh video
+
 $('#feature-video7').on('click', function(e){
   e.preventDefault();
   $('#feature-overlay7').addClass('open');
@@ -373,9 +387,6 @@ function close_overlay7() {
   $('#featureModalBtn7').removeClass('open');
 };
 
-
-
-// carousels
 
 // pricing carousel
 
@@ -417,13 +428,6 @@ const move = (e) => {
 	slider.addEventListener('mouseup', end);
 	slider.addEventListener('touchend', end);
 })();
-
-
-const featureBtnNext = document.getElementById('feature-btn-next');
-
-// featureBtnNext.addEventListener('click', (e) => {
-  
-// })
 
 
 
@@ -489,7 +493,6 @@ $(document).ready(function () {
       });
   });
 });
-// })
 
 
 // how it works slide 
@@ -508,12 +511,14 @@ $(window).scroll(function(){
 // services slide 
 
 $(window).scroll(function(){
-  if($(window).scrollTop() > $('#services').offset().top && $(window).scrollTop() < $('#services').offset().top + $('#services').height()){
-    $('#services-header').css('position', 'fixed');
-    $('#services-header').css('top', '20%');
-  }else{
-    $('#services-header').css('position', 'absolute');
-    $('#services-header').css('top', '0');
+  if($(window).width < 650){
+    if($(window).scrollTop() > $('#services').offset().top && $(window).scrollTop() < $('#services').offset().top + $('#services').height()){
+      $('#services-header').css('position', 'fixed');
+      $('#services-header').css('top', '20%');
+    }else{
+      $('#services-header').css('position', 'absolute');
+      $('#services-header').css('top', '0');
+    }
   }
 })
 
@@ -540,3 +545,53 @@ $(window).scroll(function(){
     }
   }
 })
+
+
+
+// how it works nav button
+
+$(".js-hiw-link-1").click(function() {
+  $('html, body').animate({
+    scrollTop: $("#hiw-1").offset().top - $(window).height()/2
+  }, 100);
+  checkActive($(".js-hiw-link-1"))
+});
+$(".js-hiw-link-2").click(function() {
+  $('html, body').animate({
+    scrollTop: $("#hiw-2").offset().top - $(window).height()/2
+  }, 100);
+  checkActive($(".js-hiw-link-2"))
+});
+$(".js-hiw-link-3").click(function() {
+  $('html, body').animate({
+    scrollTop: $("#hiw-3").offset().top - $(window).height()/2
+  }, 100);
+  checkActive($(".js-hiw-link-3"))
+});
+$(".js-hiw-link-4").click(function() {
+  $('html, body').animate({
+    scrollTop: $("#hiw-4").offset().top - $(window).height()/2
+  }, 100);
+  checkActive($(".js-hiw-link-4"))
+});
+$(".js-hiw-link-5").click(function() {
+  $('html, body').animate({
+    scrollTop: $("#hiw-5").offset().top - $(window).height()/2
+  }, 100);
+  checkActive($(".js-hiw-link-5"))
+});
+$(".js-hiw-link-6").click(function() {
+  $('html, body').animate({
+    scrollTop: $("#hiw-6").offset().top - $(window).height()/2
+  }, 100);
+  checkActive($(".js-hiw-link-6"))
+});
+
+function checkActive(target){
+  $('.hiw-nav-list__btn').each(function(){
+    if($(".hiw-nav-list__btn").hasClass("is-active")){
+      $(".hiw-nav-list__btn").removeClass("is-active")
+    }
+  })
+  target.addClass("is-active")
+}

@@ -40,27 +40,27 @@
                         <img src="./static/logo.svg" alt="Everpost">
                     </a>
                     <!-- mobile logo -->
-                    <a href="./" class="db s:dn site-logo pea" onclick="mobileMenu(this)">
+                    <button class="db s:dn site-logo pea" onclick="mobileMenu(this)">
                         <img src="./static/logo.svg" alt="Everpost">
-                    </a>
+                    </button>
                     <!-- desktop navbar -->
                     <div class="head__nav f rel">
                         <div class="sh__line dn s:db abs left x | js-sh-line"></div>
                         <ul class="f sm aic s:ais | js-sm-list">
                             <li class="dn s:db">
-                                <a href="#" class="sm-link rel pea is-active | js-sm-link" data-anchor="#purpose">
+                                <a href="#intro" class="sm-link rel pea is-active | js-sm-link" data-anchor="#purpose">
                                     <span class="sm-link__count db">01</span>
                                     <span class="sm-link__label">Purpose</span>
                                 </a>
                             </li>
                             <li class="dn s:db">
-                                <a href="#" class="sm-link rel pea | js-sm-link" data-anchor="#how-it-works">
+                                <a href="#how-it-works" class="sm-link rel pea | js-sm-link" data-anchor="#how-it-works">
                                     <span class="sm-link__count db">02</span>
                                     <span class="sm-link__label">How It Works</span>
                                 </a>
                             </li>
                             <li class="dn s:db">
-                                <a href="#" class="sm-link rel pea | js-sm-link" data-anchor="#pricing">
+                                <a href="#pricing" class="sm-link rel pea | js-sm-link" data-anchor="#pricing">
                                     <span class="sm-link__count db">03</span>
                                     <span class="sm-link__label">Packages</span>
                                 </a>
@@ -72,7 +72,7 @@
                                 </a>
                             </li>
                             <li class="dn s:db">
-                                <a href="#" class="sm-link rel pea | js-sm-link" data-anchor="#talent">
+                                <a href="#talent" class="sm-link rel pea | js-sm-link" data-anchor="#talent">
                                     <span class="sm-link__count db">05</span>
                                     <span class="sm-link__label">Talent</span>
                                 </a>
@@ -98,7 +98,7 @@
                                 </button>
                             </li>
                         </ul>
-                        <a href="https://www.pricing.everpost.com/" class="btn sh__btn dn s:db rel pea" target="_blank" onclick="dataLayer.push({event: 'get pricing click', action: 'open pricing site to new tab'})">
+                        <a href="#" class="btn sh__btn dn s:db rel pea" target="_blank" onclick="dataLayer.push({event: 'get pricing click', action: 'open pricing site to new tab'})">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="176" height="53" viewBox="0 0 176 53">
                                 <defs>
                                     <linearGradient id="1_group-7-copy-a" x1="0%" x2="100%" y1="46.798%" y2="53.531%">
@@ -118,31 +118,31 @@
                     <div class="s:dn mobile-menu" id="mobile-menu">
                         <ul class="">
                             <li>
-                                <a href="" class="sm-link rel pea is-active | js-sm-link" data-anchor="#purpose">
+                                <a href="#intro" class="sm-link rel pea is-active | js-sm-link" data-anchor="#purpose">
                                     <span class="sm-link__count db">01</span>
                                     <span class="sm-link__label">Purpose</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="" class="sm-link rel pea | js-sm-link" data-anchor="#how-it-works">
+                                <a href="#how-it-works" class="sm-link rel pea | js-sm-link" data-anchor="#how-it-works">
                                     <span class="sm-link__count db">02</span>
                                     <span class="sm-link__label">How It Works</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="" class="sm-link rel pea | js-sm-link" data-anchor="#pricing">
+                                <a href="#pricing" class="sm-link rel pea | js-sm-link" data-anchor="#pricing">
                                     <span class="sm-link__count db">03</span>
                                     <span class="sm-link__label">Packages</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="" class="sm-link rel pea | js-sm-link" data-anchor="#proof">
+                                <a href="#proof" class="sm-link rel pea | js-sm-link" data-anchor="#proof">
                                     <span class="sm-link__count db">04</span>
                                     <span class="sm-link__label">Clients</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="" class="sm-link rel pea | js-sm-link" data-anchor="#talent">
+                                <a href="#talent" class="sm-link rel pea | js-sm-link" data-anchor="#talent">
                                     <span class="sm-link__count db">05</span>
                                     <span class="sm-link__label">Talent</span>
                                 </a>
@@ -293,7 +293,7 @@
             </div>
 
             <!-- intro -->
-            <section class="intro rel pen | js-intro">
+            <section id="intro" class="intro rel pen | js-intro">
                 <div class="abs fill z1" data-smooth-item>
                     <img src="./static/bg-gradient.png" class="intro__bg abs top left x y wct | js-intro__bg" alt="">
                     <div class="curve abs left right">
@@ -433,7 +433,7 @@
                                 <div class="hiw-nav__inner rel">
                                     <ul class="hiw-nav-list rel bg-base-white z2">
                                         <li>
-                                            <button type="button" data-anchor="#hiw-1" class="hiw-nav-list__btn is-active | js-hiw-link">
+                                            <button type="button" data-anchor="#hiw-1" class="hiw-nav-list__btn | js-hiw-link-1">
                                                 <div class="rel">
                                                     <img src="./static/hiw/hiw_nav_01.svg" alt="">
                                                     <img src="./static/hiw/hiw_nav_01-active.svg" class="abs top left x y"  alt="">
@@ -441,7 +441,7 @@
                                             </button>
                                         </li>
                                         <li>
-                                            <button type="button" data-anchor="#hiw-2" class="hiw-nav-list__btn | js-hiw-link">
+                                            <button type="button" data-anchor="#hiw-2" class="hiw-nav-list__btn | js-hiw-link-2">
                                                 <div class="rel">
                                                     <img src="./static/hiw/hiw_nav_02.svg" alt="">
                                                     <img src="./static/hiw/hiw_nav_02-active.svg" class="abs top left x y" alt="">
@@ -449,7 +449,7 @@
                                             </button>
                                         </li>
                                         <li>
-                                            <button type="button" data-anchor="#hiw-3" class="hiw-nav-list__btn | js-hiw-link">
+                                            <button type="button" data-anchor="#hiw-3" class="hiw-nav-list__btn | js-hiw-link-3">
                                                 <div class="rel">
                                                     <img src="./static/hiw/hiw_nav_03.svg" alt="">
                                                     <img src="./static/hiw/hiw_nav_03-active.svg" class="abs top left x y" alt="">
@@ -457,7 +457,7 @@
                                             </button>
                                         </li>
                                         <li>
-                                            <button type="button" data-anchor="#hiw-4" class="hiw-nav-list__btn | js-hiw-link">
+                                            <button type="button" data-anchor="#hiw-4" class="hiw-nav-list__btn | js-hiw-link-4">
                                                 <div class="rel">
                                                     <img src="./static/hiw/hiw_nav_04.svg" alt="">
                                                     <img src="./static/hiw/hiw_nav_04-active.svg" class="abs top left x y" alt="">
@@ -465,7 +465,7 @@
                                             </button>
                                         </li>
                                         <li>
-                                            <button type="button" data-anchor="#hiw-5" class="hiw-nav-list__btn | js-hiw-link">
+                                            <button type="button" data-anchor="#hiw-5" class="hiw-nav-list__btn | js-hiw-link-5">
                                                 <div class="rel">
                                                     <img src="./static/hiw/hiw_nav_05.svg" alt="">
                                                     <img src="./static/hiw/hiw_nav_05-active.svg" class="abs top left x y" alt="">
@@ -473,7 +473,7 @@
                                             </button>
                                         </li>
                                         <li>
-                                            <button type="button" data-anchor="#hiw-6" class="hiw-nav-list__btn | js-hiw-link">
+                                            <button type="button" data-anchor="#hiw-6" class="hiw-nav-list__btn | js-hiw-link-6">
                                                 <div class="rel">
                                                     <img src="./static/hiw/hiw_nav_06.svg" alt="">
                                                     <img src="./static/hiw/hiw_nav_06-active.svg" class="abs top left x y" alt="">
@@ -514,7 +514,7 @@
                             </div>
                             <div class="x s:col8 rel mha">
                                 <div class="hiw__canvas"></div>
-                                <figure class="hiw__bm hiw__bm--1 abs | js-bm" data-name="hiw1"></figure>
+                                <video src="./static/video.mp4" class="hiw__bm hiw__bm--1 abs | js-bm-video" data-name="hiw1" autoplay muted></video>
                             </div>
                         </div>
                     </div>
@@ -545,7 +545,7 @@
                             </div>
                             <div class="x s:col8 rel mha">
                                 <div class="hiw__canvas"></div>
-                                <figure class="hiw__bm hiw__bm--2 abs top left x y | js-bm" data-name="hiw2"></figure>
+                                <video src="./static/video.mp4" class="hiw__bm hiw__bm--2 abs top left x y | js-bm-video" data-name="hiw2" muted autoplay></video>
                             </div>
                         </div>
                     </div>
@@ -570,7 +570,7 @@
                                     </div>
                                     <div class="hiw-slide__wrap x s:col8 rel mha | js-hiw-slide">
                                         <div class="hiw__canvas"></div>
-                                        <figure class="hiw__bm hiw__bm--slide abs top left x y | js-bm-m" data-name="hiw3"></figure>
+                                        <video src="./static/video.mp4" class="hiw__bm hiw__bm--slide abs top left x y | js-bm-m" data-name="hiw3" autoplay muted></video>
                                     </div>
                                 </div>
                             </div>
@@ -586,7 +586,7 @@
                                     </div>
                                     <div class="hiw-slide__wrap x s:col8 rel mha | js-hiw-slide">
                                         <div class="hiw__canvas"></div>
-                                        <figure class="hiw__bm hiw__bm--slide abs top left x y | js-bm-m" data-name="hiw4"></figure>
+                                        <video src="./static/video.mp4" class="hiw__bm hiw__bm--slide abs top left x y | js-bm-m" data-name="hiw4" muted autoplay></video>
                                     </div>
                                 </div>
                             </div>
@@ -602,7 +602,7 @@
                                     </div>
                                     <div class="hiw-slide__wrap x s:col8 rel mha | js-hiw-slide">
                                         <div class="hiw__canvas"></div>
-                                        <figure class="hiw__bm hiw__bm--slide abs top left x y | js-bm-m" data-name="hiw5"></figure>
+                                        <video src="./static/video.mp4" class="hiw__bm hiw__bm--slide abs top left x y | js-bm-m" data-name="hiw5" autoplay muted></vi>
                                     </div>
                                 </div>
                             </div>
@@ -618,7 +618,7 @@
                                     </div>
                                     <div class="hiw-slide__wrap x s:col8 rel mha | js-hiw-slide">
                                         <div class="hiw__canvas"></div>
-                                        <figure class="hiw__bm hiw__bm--slide abs top left x y | js-bm-m" data-name="hiw6"></figure>
+                                        <video src="./static/video.mp4" class="hiw__bm hiw__bm--slide abs top left x y | js-bm-m" data-name="hiw6" autoplay muted></video>
                                     </div>
                                 </div>
                             </div>
@@ -635,7 +635,7 @@
                             </div>
                             <div class="x s:col8 rel mha">
                                 <div class="hiw__canvas"></div>
-                                <figure class="hiw__bm hiw__bm--7 abs | js-bm" data-name="hiw7"></figure>
+                                <video src="./static/video.mp4" class="hiw__bm hiw__bm--7 abs | js-bm-video" data-name="hiw7" muted autoplay></video>
                             </div>
                         </div>
                     </div>
@@ -650,7 +650,7 @@
                             </div>
                             <div class="x s:col8 rel mha">
                                 <div class="hiw__canvas"></div>
-                                <figure class="hiw__bm hiw__bm--8 abs top left x y | js-bm" data-name="hiw8"></figure>
+                                <video src="./static/video.mp4" class="hiw__bm hiw__bm--8 abs top left x y | js-bm-video" data-name="hiw8" muted autoplay></video>
                             </div>
                         </div>
                     </div>
@@ -665,7 +665,7 @@
                             </div>
                             <div class="x s:col8 rel mha">
                                 <div class="hiw__canvas"></div>
-                                <figure class="hiw__bm hiw__bm--9 abs top left x y | js-bm" data-name="hiw9"></figure>
+                                <video src="./static/video.mp4" class="hiw__bm hiw__bm--9 abs top left x y | js-bm-video" data-name="hiw9" muted autoplay></video>
                             </div>
                         </div>
                     </div>
@@ -1946,8 +1946,8 @@
 
     </main>
     
-    <!-- <script src="./static/app.js"></script> -->
     <script src="./static/sample.js"></script>
+    <!-- <script src="./app.js"></script> -->
 
 </body>
 
